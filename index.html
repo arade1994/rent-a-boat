@@ -2,19 +2,562 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rent a Boat is a website which provides information about incredible tour across Istrian coast in Croatia"
+    />
+
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
 
     <title>Rent a Boat</title>
   </head>
   <body>
-    <div>Rent a Boat</div>
+    <header class="header">
+      <a href="#" class="logo">
+        <ion-icon class="logo_icon" name="boat-outline"></ion-icon>
+        <h2 class="logo_text">RENT A BOAT</h2>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#boat">Boat</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
+          <li>
+            <a class="main-nav-link" href="#journey">Journey</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#places">Places</a>
+          </li>
+          <li><a class="main-nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Rent a boat</h1>
+            <p class="hero-description">
+              Rent a luxury private boat with mini bar and Skipper. Enjoy the
+              sea, islands and beaches exploring the Croatian coast in the best
+              possible way.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Start your adventure</a
+            >
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+          <div class="hero-image-box">
+            <div class="hero-image-box__pictures">
+              <img
+                src="assets/images/hero/hero1.jpg"
+                alt="Beautifull coast"
+                class="hero-image-box__img--1"
+              />
+              <img
+                src="assets/images/hero/hero2.jpg"
+                alt="Beautifull Croatian city of Rovinj"
+                class="hero-image-box__img--2"
+              />
+              <img
+                src="assets/images/hero/hero3.jpg"
+                alt="Rich and beautifull seaworld"
+                class="hero-image-box__img--3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="boat" class="section-boat">
+        <div class="section-boat__info">
+          <div class="section-boat__info--images">
+            <img
+              class="section-boat__info--images-1"
+              src="assets/images/boat/boat2.jpg"
+              alt="Beautifull boat image"
+            />
+            <img
+              class="section-boat__info--images-2"
+              src="assets/images/boat/boat1.jpg"
+              alt="Image of boat controlls"
+            />
+            <img
+              class="section-boat__info--images-3"
+              src="assets/images/boat/boat3.jpg"
+              alt="Image of boat controlls"
+            />
+          </div>
+
+          <div class="section-boat__info--details">
+            <ul class="list">
+              <li>
+                <h2 class="heading-secondary margin-bottom-md">
+                  About the boat
+                </h2>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="people-outline"></ion-icon>
+                <span>Can accommodate up to 8 people</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="build-outline"></ion-icon>
+                <span>140-horsepower engine</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="boat-outline"></ion-icon>
+                <span>New boat for fast, safe an luxury cruising</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-services">
+        <div class="center-text">
+          <h2 class="heading-secondary">What we offer!</h2>
+        </div>
+
+        <div class="services-container">
+          <div class="service">
+            <ion-icon class="service__icon" name="location-outline"></ion-icon>
+            <h4 class="heading-quartary">Pick up</h4>
+            <p class="service__text">
+              Pick up point or boarding of guests can take place by sea or road.
+            </p>
+          </div>
+          <div class="service">
+            <ion-icon class="service__icon" name="time-outline"></ion-icon>
+            <h4 class="heading-quartary">Time and place</h4>
+            <p class="service__text">
+              The time and place of reception are flexible according to needs
+              and wishes of guests.
+            </p>
+          </div>
+          <div class="service">
+            <ion-icon class="service__icon" name="boat-outline"></ion-icon>
+            <h4 class="heading-quartary">Luxury</h4>
+            <p class="service__text">
+              The goal is to provide luxurious high-quality services to our
+              guests.
+            </p>
+          </div>
+          <div class="service">
+            <ion-icon class="service__icon" name="earth-outline"></ion-icon>
+            <h4 class="heading-quartary">Cruising area</h4>
+            <p class="service__text">
+              Cruising in the area of Bujština and Istra.
+            </p>
+          </div>
+          <div class="service">
+            <ion-icon
+              class="service__icon"
+              name="add-circle-outline"
+            ></ion-icon>
+            <h4 class="heading-quartary">Additional services</h4>
+            <p class="service__text">
+              There is also additional services of a mini bar, water sports,
+              fishing and other services.
+            </p>
+          </div>
+          <div class="service">
+            <ion-icon class="service__icon" name="book-outline"></ion-icon>
+            <h4 class="heading-quartary">Fluent Skipper</h4>
+            <p class="service__text">
+              The Skipper is fluent in English, German and Italian language. So
+              the communication is suitable for large nationalities of guests.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="section-journey">
+        <div class="center-text">
+          <h2 class="heading-secondary">Go on journey with us</h2>
+        </div>
+
+        <div class="section-journey-container">
+          <div class="section-journey__step">
+            <div class="section-journey__step--picture"></div>
+            <div class="section-journey__step--heading">
+              <span>Pick up point</span>
+            </div>
+            <div class="section-journey__step--details">
+              <ul>
+                <li>Umag area</li>
+                <li>Flexible time</li>
+                <li>Flexible place</li>
+                <li>By sea</li>
+                <li>Or on road</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-journey__step">
+            <div class="section-journey__step--picture"></div>
+            <div class="section-journey__step--heading">
+              <span>Tour</span>
+            </div>
+            <div class="section-journey__step--details">
+              <ul>
+                <li>Brijuni</li>
+                <li>Rovinj, Portorož, Lim fjord, Vrsar</li>
+                <li>Poreč, Novigrad</li>
+                <li>Pula, Medulin</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-journey__step">
+            <div class="section-journey__step--picture"></div>
+            <div class="section-journey__step--heading">
+              <span>Return</span>
+            </div>
+            <div class="section-journey__step--details">
+              <ul>
+                <li>Enjoy the ride</li>
+                <li>Water skiing</li>
+                <li>Music</li>
+                <li>Mini bar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="places" class="section-places">
+        <div class="container">
+          <h2 class="heading-secondary">Cool places you can visit with us</h2>
+        </div>
+        <div class="places-container">
+          <div class="place-text-box">
+            <h3 class="heading-tertiary">Brijuni</h3>
+            <p class="place-description">
+              Brijuni are islands at the south coast of Istrian peninsula. It
+              consists of 14 smaller islands and all of them belong to the
+              National Park. <br />On the island of Veli Brijun which is open
+              for the visitors, there is a marina for yachts, an excellent
+              restaurant, and the residence of the former Yugoslavian president
+              Josip Broz Tito. As well as his personal car, Museums and many
+              other interesting points, as beautifull sandy beaches.
+            </p>
+          </div>
+          <div class="place-image-box">
+            <img
+              src="assets/images/places/brijuni.jpg"
+              class="place-img"
+              alt="National Park Brijuni"
+            />
+          </div>
+          <div class="place-image-box">
+            <img
+              src="assets/images/places/rovinj.jpg"
+              class="place-img"
+              alt="Beautifull city of Rovinj"
+            />
+          </div>
+          <div class="place-text-box">
+            <h3 class="heading-tertiary">Rovinj</h3>
+            <p class="place-description">
+              Along with Dubrovnik, Rovinj is the most visited town on Croatian
+              coast. This charming old Mediterranean city is located on a kind
+              of peninsula. It has a magnificent view on the sea from north,
+              west and south. Provides fantastic view of the surrounding
+              islands.<br />
+              Its historical stone streets, the Church of St. Euphemia, the
+              excellent gastronomic offer of Istria with truffels, prosciutto,
+              wine, cheese, olive oil, sea food specialities, have left visitors
+              breathless for decades.
+            </p>
+          </div>
+          <div class="place-text-box">
+            <h3 class="heading-tertiary">Poreč</h3>
+            <p class="place-description">
+              Poreč is also a midleage Mediterranean town on the Adriatic coast.
+              Only 20 minutes by boat from Umag. It offers a large selection of
+              beaches, islands, restaurants and historical sight such as
+              Euphrasian Basillic(UNESCO).
+            </p>
+          </div>
+          <div class="place-image-box">
+            <img
+              src="assets/images/places/porec.jpg"
+              class="place-img"
+              alt="Beautifull picture of the city of Poreč"
+            />
+          </div>
+          <div class="place-image-box">
+            <img
+              src="assets/images/places/pula.jpg"
+              class="place-img"
+              alt="City of Pula"
+            />
+          </div>
+          <div class="place-text-box">
+            <h3 class="heading-tertiary">Pula</h3>
+            <p class="place-description">
+              Pula is located 20 minutes south from Brijuni islands. It is best
+              known for the Colosseum, which dates back to the Roman Empire. It
+              is the only preserved example of an ancient Arena along with
+              Colosseum in Rome. There are also city gates from Roman Empire and
+              the Temple of roman emperor Octavian August, as well as many
+              museums, restaurants, squares and parks.
+            </p>
+          </div>
+          <div class="place-text-box">
+            <h3 class="heading-tertiary">Lim fjord</h3>
+            <p class="place-description">
+              Lim fjord is located between Vrsar and Rovinj. It is 7 kilometers
+              long. Serves as shellfish farm and touristic attraction. There are
+              moorings for tourist boats, restaurants, caffe bars and souvenir
+              shops.
+            </p>
+          </div>
+          <div class="place-image-box">
+            <img
+              src="assets/images/places/lim-fjord.jpg"
+              class="place-img"
+              alt="Beautifull natural Lim fjord at Vrsar"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section-gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img
+            src="assets/images/gallery/gal-1.jpg"
+            alt="Gallery image 1"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img
+            src="assets/images/gallery/gal-2.jpg"
+            alt="Gallery image 2"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img
+            src="assets/images/gallery/gal-3.jpg"
+            alt="Gallery image 3"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            src="assets/images/gallery/gal-4.jpg"
+            alt="Gallery image 4"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img
+            src="assets/images/gallery/gal-5.jpg"
+            alt="Gallery image 5"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img
+            src="assets/images/gallery/gal-6.jpg"
+            alt="Gallery image 6"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img
+            src="assets/images/gallery/gal-7.jpg"
+            alt="Gallery image 7"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img
+            src="assets/images/gallery/gal-8.jpg"
+            alt="Gallery image 8"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+          <img
+            src="assets/images/gallery/gal-9.jpg"
+            alt="Gallery image 9"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+          <img
+            src="assets/images/gallery/gal-10.jpg"
+            alt="Gallery image 10"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+          <img
+            src="assets/images/gallery/gal-11.jpg"
+            alt="Gallery image 11"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+          <img
+            src="assets/images/gallery/gal-12.jpg"
+            alt="Gallery image 12"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--13">
+          <img
+            src="assets/images/gallery/gal-13.jpg"
+            alt="Gallery image 13"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--14">
+          <img
+            src="assets/images/gallery/gal-14.jpg"
+            alt="Gallery image 14"
+            class="gallery__img"
+          />
+        </figure>
+      </section>
+
+      <section id="cta" class="section-cta">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Start your adventure with us</h2>
+            <p class="cta-text">
+              Send us email, we are waiting for you to go with us on a
+              beautifull journey!
+            </p>
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="cta-form__message">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="btn btn--form">Send</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Beautifull Croatian coast"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container--company">
+          <h2 class="heading-secondary company-name">RENT A BOAT</h2>
+          <p class="copyright">
+            Copyright &copy; <span class="year"></span> by Rent a Boat.<br />
+            All rights reserved
+          </p>
+        </div>
+        <div class="footer__container--contact">
+          <h3 class="heading-tertiary">Contact</h3>
+          <div class="contact-text">+385 91 565 1843 - Jan</div>
+          <div class="contact-text">jveznaver@gmail.com</div>
+        </div>
+        <div class="footer__container--social">
+          <h3 class="heading-tertiary">Social Media</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100090900279956"
+              onclick="window.open('https://www.facebook.com/profile.php?id=100090900279956', '_blank')"
+              class="social-icon-link"
+              target="_blank"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+            <a
+              href="https://instagram.com/advanced_rentaboat?igshid=MzNlNGNkZWQ4Mg=="
+              onclick="window.open('https://instagram.com/advanced_rentaboat?igshid=MzNlNGNkZWQ4Mg==', '_blank')"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.youtube.com/@Advancedrentaboat"
+              onclick="window.open('https://www.youtube.com/@Advancedrentaboat', '_blank')"
+              class="social-icon-link"
+              target="_blank"
+              ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="footer__container--partners">
+          <h3 class="heading-tertiary">Partners</h3>
+          <div class="partner-name">Kempinski Adriatic</div>
+          <div class="partner-name">Kempinski Palace Portorož</div>
+          <div class="partner-name">San Canzian Village & Hotel</div>
+          <div class="partner-name">Petram Resort</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
