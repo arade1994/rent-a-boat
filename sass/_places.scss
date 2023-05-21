@@ -1,0 +1,47 @@
+.section-places {
+  padding: 9.6rem 20rem;
+
+  & .places-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+
+    @media only screen and (max-width: 70em) {
+      grid-template-columns: 1fr;
+    }
+
+    & .place-number {
+      font-size: 5rem;
+      font-weight: 600;
+      color: $color-primary-dark;
+      margin-bottom: 1.2rem;
+    }
+
+    & .place-description {
+      font-size: 1.8rem;
+      line-height: 1.8;
+    }
+
+    & .place-image-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @media only screen and (max-width: 70em) {
+        &:nth-child(3) {
+          grid-row: 4;
+        }
+
+        &:nth-child(7) {
+          grid-row: 8;
+        }
+      }
+
+      & .place-img {
+        width: 100%;
+        box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
