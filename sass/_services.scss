@@ -1,6 +1,10 @@
 .section-services {
   padding: 9.6rem 20rem;
 
+  @media only screen and (max-width: 560px) {
+    padding: 9.6rem 10rem;
+  }
+
   & .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
