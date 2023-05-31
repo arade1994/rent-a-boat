@@ -5,6 +5,10 @@
     padding: 9.6rem 10rem;
   }
 
+  @media only screen and (max-width: 400px) {
+    padding: 5rem 3rem;
+  }
+
   & .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
