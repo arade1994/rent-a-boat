@@ -405,7 +405,7 @@ body {
   @media only screen and (max-width: 800px) {
     .section-hero {
       padding: 4.8rem 4rem 9.6rem 4rem; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .section-hero {
       padding: 4.8rem 1rem 9.6rem 1rem;
       height: 85vh; } }
@@ -556,7 +556,7 @@ body {
       padding: 9.6rem 10rem; } }
   @media only screen and (max-width: 400px) {
     .section-services {
-      padding: 5rem 3rem; } }
+      padding: 10rem 3rem; } }
   .section-services .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
