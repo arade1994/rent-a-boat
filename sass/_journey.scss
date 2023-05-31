@@ -1,10 +1,20 @@
 .section-journey {
   margin: 5rem 20rem;
 
+  @media only screen and (max-width: 1120px) {
+    margin: 5rem auto;
+  }
+
   & .section-journey-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 5rem;
+
+    @media only screen and (max-width: 1120px) {
+      grid-template-columns: 1fr;
+      width: 60%;
+      margin: 5rem auto;
+    }
   }
 
   &__step {

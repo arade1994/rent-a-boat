@@ -1,6 +1,10 @@
 .section-places {
   padding: 9.6rem 20rem;
 
+  @media only screen and (max-width: 700px) {
+    padding: 9.6rem 5rem;
+  }
+
   & .places-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
