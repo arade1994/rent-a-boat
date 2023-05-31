@@ -408,7 +408,7 @@ body {
   @media only screen and (max-width: 500px) {
     .section-hero {
       padding: 4.8rem 1rem 9.6rem 1rem;
-      height: 85vh; } }
+      height: 60vh; } }
   .section-hero .hero {
     display: grid;
     max-width: 130rem;
@@ -456,9 +456,9 @@ body {
     @media only screen and (max-width: 600px) {
       .section-hero .hero-image-box {
         width: 90%; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
       .section-hero .hero-image-box {
-        width: 100%; } }
+        display: none; } }
     .section-hero .hero-image-box__pictures {
       display: grid;
       grid-column: full-start / col-end 4;
