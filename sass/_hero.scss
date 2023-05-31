@@ -32,6 +32,10 @@
     height: 60vh;
   }
 
+  @media only screen and (max-height: 600px) {
+    height: 120vh;
+  }
+
   & .hero {
     display: grid;
     max-width: 130rem;
