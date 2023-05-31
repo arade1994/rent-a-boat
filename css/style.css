@@ -411,7 +411,7 @@ body {
       height: 60vh; } }
   @media only screen and (max-height: 600px) {
     .section-hero {
-      height: 120vh; } }
+      height: 180vh; } }
   .section-hero .hero {
     display: grid;
     max-width: 130rem;
