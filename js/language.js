@@ -2,7 +2,6 @@ window.onload = () => {
   function setDefaultLanguage() {
     const pathname = window.location.pathname;
     const languageSelector = document.getElementById("language");
-    console.log(languageSelector);
 
     if (pathname === "/") {
       languageSelector.options[0].setAttribute("selected", "selected");
